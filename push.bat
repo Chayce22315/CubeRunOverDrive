@@ -25,7 +25,7 @@ if "%desc%"=="" (
     git commit -m "%msg%" -m "%desc%"
 )
 
-git push -u origin main
+git push -u origin HEAD
 
 echo =================================
 echo   Successfully Pushed!
