@@ -1,6 +1,7 @@
 import SpriteKit
 
 /// Smooth camera follow with forward bias.
+@MainActor
 final class CameraController {
     let cameraNode: SKCameraNode
 

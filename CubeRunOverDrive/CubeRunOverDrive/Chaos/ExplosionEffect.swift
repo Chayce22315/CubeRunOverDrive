@@ -1,6 +1,7 @@
 import SpriteKit
 
 /// Short-lived burst sprites (no extra physics bodies).
+@MainActor
 enum ExplosionEffect {
     private static let particleCount = 7
     private static let lifetime: TimeInterval = 0.45

@@ -1,6 +1,7 @@
 import SpriteKit
 
 /// Manages start menu, playing, and game over overlays.
+@MainActor
 final class GameStateManager {
     private(set) var state: GameState = .startMenu
 

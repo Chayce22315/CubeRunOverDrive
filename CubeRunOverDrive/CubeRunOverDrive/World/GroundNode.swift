@@ -1,6 +1,7 @@
 import SpriteKit
 
 /// Long static floor for the runner.
+@MainActor
 final class GroundNode: SKNode {
     private static let segmentWidth: CGFloat = 2000
 

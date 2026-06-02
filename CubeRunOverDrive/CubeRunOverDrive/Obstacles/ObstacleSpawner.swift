@@ -1,6 +1,7 @@
 import SpriteKit
 
 /// Spawns static blocks and moving cars ahead of the player; density scales with chaos level.
+@MainActor
 final class ObstacleSpawner {
     weak var worldNode: SKNode?
 

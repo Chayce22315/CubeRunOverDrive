@@ -1,12 +1,14 @@
 import SpriteKit
 
 /// Drop-kick button in camera space; visible only when airborne.
+@MainActor
 final class KickButtonNode: SKNode {
     private let background: SKShapeNode
     private let label: SKLabelNode
     private let hitSize = CGSize(width: 64, height: 64)
 
-    init() {
+    override init() {
+        super.init()
         background = SKShapeNode(rectOf: hitSize, cornerRadius: 12)
         background.fillColor = SKColor(red: 0.95, green: 0.4, blue: 0.1, alpha: 0.9)
         background.strokeColor = .white

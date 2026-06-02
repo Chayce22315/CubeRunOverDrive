@@ -1,6 +1,7 @@
 import SpriteKit
 
 /// Square player cube with physics body.
+@MainActor
 final class PlayerNode: SKSpriteNode {
     static let size = CGSize(width: 40, height: 40)
 

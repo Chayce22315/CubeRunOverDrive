@@ -1,6 +1,7 @@
 import SpriteKit
 
 /// Handles auto-run, jump, dive, and drop kick for the player.
+@MainActor
 final class PlayerController {
     let player: PlayerNode
 

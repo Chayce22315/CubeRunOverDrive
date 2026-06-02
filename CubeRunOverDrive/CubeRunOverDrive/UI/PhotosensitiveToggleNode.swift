@@ -1,12 +1,14 @@
 import SpriteKit
 
 /// Toggle for photosensitive-safe mode (start menu + visible indicator in HUD corner).
+@MainActor
 final class PhotosensitiveToggleNode: SKNode {
     private let background: SKShapeNode
     private let label: SKLabelNode
     private let hitSize = CGSize(width: 200, height: 36)
 
-    init() {
+    override init() {
+        super.init()
         background = SKShapeNode(rectOf: hitSize, cornerRadius: 8)
         background.fillColor = SKColor(white: 0.1, alpha: 0.75)
         background.strokeColor = SKColor(white: 0.5, alpha: 1)

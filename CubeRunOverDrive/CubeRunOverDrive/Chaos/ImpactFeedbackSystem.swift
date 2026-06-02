@@ -1,6 +1,7 @@
 import SpriteKit
 
 /// Screen shake and flash on big impacts (respects photosensitive-safe mode).
+@MainActor
 final class ImpactFeedbackSystem {
     private let cameraNode: SKCameraNode
     private let flashOverlay: SKSpriteNode

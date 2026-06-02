@@ -1,6 +1,7 @@
 import SpriteKit
 
 /// Car that moves left across the lane.
+@MainActor
 final class MovingCarObstacle: SKSpriteNode, ExplodableObstacle {
     let moveSpeed: CGFloat
     private(set) var isDestroyed = false

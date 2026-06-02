@@ -1,11 +1,13 @@
 import SpriteKit
 
 /// On-screen HUD (score) fixed to camera space.
+@MainActor
 final class HUDNode: SKNode {
     private let scoreLabel: SKLabelNode
     private let chaosLabel: SKLabelNode
 
-    init() {
+    override init() {
+        super.init()
         scoreLabel = SKLabelNode(fontNamed: "AvenirNext-Bold")
         scoreLabel.fontSize = 28
         scoreLabel.fontColor = .white

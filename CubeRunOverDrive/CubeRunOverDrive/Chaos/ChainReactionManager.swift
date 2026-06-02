@@ -1,6 +1,7 @@
 import SpriteKit
 
 /// Obstacle explosions and chain reactions with depth limit.
+@MainActor
 final class ChainReactionManager {
     private let explosionSystem: ExplosionSystem
     private let impactFeedback: ImpactFeedbackSystem

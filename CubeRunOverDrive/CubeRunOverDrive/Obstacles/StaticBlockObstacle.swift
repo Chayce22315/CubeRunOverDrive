@@ -1,6 +1,7 @@
 import SpriteKit
 
 /// Static block sitting on the ground.
+@MainActor
 final class StaticBlockObstacle: SKSpriteNode, ExplodableObstacle {
     private(set) var isDestroyed = false
 

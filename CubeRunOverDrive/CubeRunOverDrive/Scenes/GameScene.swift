@@ -2,7 +2,7 @@ import SpriteKit
 
 /// Main game scene — Phase 1 core + Phase 2 chaos systems.
 @MainActor
-final class GameScene: SKScene, SKPhysicsContactDelegate {
+final class GameScene: SKScene, @preconcurrency SKPhysicsContactDelegate {
     private let worldNode = SKNode()
     private let player = PlayerNode()
     private lazy var playerController = PlayerController(player: player)
@@ -30,7 +30,7 @@ final class GameScene: SKScene, SKPhysicsContactDelegate {
 
     private let dropKickHitRadius: CGFloat = 70
 
-    init(size: CGSize) {
+    override init(size: CGSize) {
         gameLayout = GameLayout(sceneSize: size)
         super.init(size: size)
     }
