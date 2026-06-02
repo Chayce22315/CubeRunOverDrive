@@ -1,0 +1,469 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A10000000000000000000001 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000001 /* AppDelegate.swift */; };
+		A10000000000000000000002 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000002 /* GameViewController.swift */; };
+		A10000000000000000000003 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000003 /* GameScene.swift */; };
+		A10000000000000000000004 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000004 /* GameState.swift */; };
+		A10000000000000000000005 /* GameStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000005 /* GameStateManager.swift */; };
+		A10000000000000000000006 /* PlayerNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000006 /* PlayerNode.swift */; };
+		A10000000000000000000007 /* PlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000007 /* PlayerController.swift */; };
+		A10000000000000000000008 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000008 /* CameraController.swift */; };
+		A10000000000000000000009 /* GroundNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000009 /* GroundNode.swift */; };
+		A1000000000000000000000A /* PhysicsCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000000000000000000000A /* PhysicsCategory.swift */; };
+		A1000000000000000000000B /* ObstacleNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000000000000000000000B /* ObstacleNode.swift */; };
+		A1000000000000000000000C /* StaticBlockObstacle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000000000000000000000C /* StaticBlockObstacle.swift */; };
+		A1000000000000000000000D /* MovingCarObstacle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000000000000000000000D /* MovingCarObstacle.swift */; };
+		A1000000000000000000000E /* ObstacleSpawner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000000000000000000000E /* ObstacleSpawner.swift */; };
+		A1000000000000000000000F /* HUDNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000000000000000000000F /* HUDNode.swift */; };
+		A10000000000000000000010 /* KickButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000010 /* KickButtonNode.swift */; };
+		A10000000000000000000011 /* ScoreSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000011 /* ScoreSystem.swift */; };
+		A10000000000000000000012 /* CGPoint+Lerp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000012 /* CGPoint+Lerp.swift */; };
+		A10000000000000000000013 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000013 /* Assets.xcassets */; };
+		A10000000000000000000014 /* GameLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000014 /* GameLayout.swift */; };
+		A10000000000000000000015 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000015 /* SceneDelegate.swift */; };
+		A10000000000000000000016 /* PhotosensitiveSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000016 /* PhotosensitiveSettings.swift */; };
+		A10000000000000000000017 /* ExplosionEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000017 /* ExplosionEffect.swift */; };
+		A10000000000000000000018 /* ExplosionSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000018 /* ExplosionSystem.swift */; };
+		A10000000000000000000019 /* TrafficDensityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000019 /* TrafficDensityController.swift */; };
+		A1000000000000000000001A /* ImpactFeedbackSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000000000000000000001A /* ImpactFeedbackSystem.swift */; };
+		A1000000000000000000001B /* ChainReactionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000000000000000000001B /* ChainReactionManager.swift */; };
+		A1000000000000000000001C /* PhotosensitiveToggleNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000000000000000000001C /* PhotosensitiveToggleNode.swift */; };
+		A1000000000000000000001D /* ExplodableObstacle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000000000000000000001D /* ExplodableObstacle.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B10000000000000000000001 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B10000000000000000000002 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		B10000000000000000000003 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		B10000000000000000000004 /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
+		B10000000000000000000005 /* GameStateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStateManager.swift; sourceTree = "<group>"; };
+		B10000000000000000000006 /* PlayerNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerNode.swift; sourceTree = "<group>"; };
+		B10000000000000000000007 /* PlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerController.swift; sourceTree = "<group>"; };
+		B10000000000000000000008 /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
+		B10000000000000000000009 /* GroundNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroundNode.swift; sourceTree = "<group>"; };
+		B1000000000000000000000A /* PhysicsCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicsCategory.swift; sourceTree = "<group>"; };
+		B1000000000000000000000B /* ObstacleNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObstacleNode.swift; sourceTree = "<group>"; };
+		B1000000000000000000000C /* StaticBlockObstacle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticBlockObstacle.swift; sourceTree = "<group>"; };
+		B1000000000000000000000D /* MovingCarObstacle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovingCarObstacle.swift; sourceTree = "<group>"; };
+		B1000000000000000000000E /* ObstacleSpawner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObstacleSpawner.swift; sourceTree = "<group>"; };
+		B1000000000000000000000F /* HUDNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUDNode.swift; sourceTree = "<group>"; };
+		B10000000000000000000010 /* KickButtonNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KickButtonNode.swift; sourceTree = "<group>"; };
+		B10000000000000000000011 /* ScoreSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreSystem.swift; sourceTree = "<group>"; };
+		B10000000000000000000012 /* CGPoint+Lerp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+Lerp.swift"; sourceTree = "<group>"; };
+		B10000000000000000000013 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B10000000000000000000014 /* GameLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameLayout.swift; sourceTree = "<group>"; };
+		B10000000000000000000015 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B10000000000000000000016 /* PhotosensitiveSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosensitiveSettings.swift; sourceTree = "<group>"; };
+		B10000000000000000000017 /* ExplosionEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplosionEffect.swift; sourceTree = "<group>"; };
+		B10000000000000000000018 /* ExplosionSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplosionSystem.swift; sourceTree = "<group>"; };
+		B10000000000000000000019 /* TrafficDensityController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficDensityController.swift; sourceTree = "<group>"; };
+		B1000000000000000000001A /* ImpactFeedbackSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpactFeedbackSystem.swift; sourceTree = "<group>"; };
+		B1000000000000000000001B /* ChainReactionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainReactionManager.swift; sourceTree = "<group>"; };
+		B1000000000000000000001C /* PhotosensitiveToggleNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosensitiveToggleNode.swift; sourceTree = "<group>"; };
+		B1000000000000000000001D /* ExplodableObstacle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplodableObstacle.swift; sourceTree = "<group>"; };
+		C10000000000000000000001 /* CubeRunOverDrive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CubeRunOverDrive.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C10000000000000000000002 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D10000000000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E10000000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				E10000000000000000000002 /* CubeRunOverDrive */,
+				E10000000000000000000003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E10000000000000000000002 /* CubeRunOverDrive */ = {
+			isa = PBXGroup;
+			children = (
+				E10000000000000000000004 /* App */,
+				E10000000000000000000005 /* Scenes */,
+				E10000000000000000000006 /* Game */,
+				E10000000000000000000007 /* Player */,
+				E10000000000000000000008 /* Camera */,
+				E10000000000000000000009 /* World */,
+				E1000000000000000000000A /* Obstacles */,
+				E1000000000000000000000B /* UI */,
+				E1000000000000000000000C /* Systems */,
+				E1000000000000000000000D /* Extensions */,
+				E10000000000000000000010 /* Settings */,
+				E10000000000000000000011 /* Chaos */,
+				E1000000000000000000000E /* Resources */,
+				C10000000000000000000002 /* Info.plist */,
+			);
+			path = CubeRunOverDrive;
+			sourceTree = "<group>";
+		};
+		E10000000000000000000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C10000000000000000000001 /* CubeRunOverDrive.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E10000000000000000000004 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B10000000000000000000001 /* AppDelegate.swift */,
+				B10000000000000000000015 /* SceneDelegate.swift */,
+				B10000000000000000000002 /* GameViewController.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E10000000000000000000005 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				B10000000000000000000003 /* GameScene.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		E10000000000000000000006 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				B10000000000000000000004 /* GameState.swift */,
+				B10000000000000000000005 /* GameStateManager.swift */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		E10000000000000000000007 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				B10000000000000000000006 /* PlayerNode.swift */,
+				B10000000000000000000007 /* PlayerController.swift */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		E10000000000000000000008 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				B10000000000000000000008 /* CameraController.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		E10000000000000000000009 /* World */ = {
+			isa = PBXGroup;
+			children = (
+				B10000000000000000000009 /* GroundNode.swift */,
+				B1000000000000000000000A /* PhysicsCategory.swift */,
+				B10000000000000000000014 /* GameLayout.swift */,
+			);
+			path = World;
+			sourceTree = "<group>";
+		};
+		E1000000000000000000000A /* Obstacles */ = {
+			isa = PBXGroup;
+			children = (
+				B1000000000000000000000B /* ObstacleNode.swift */,
+				B1000000000000000000001D /* ExplodableObstacle.swift */,
+				B1000000000000000000000C /* StaticBlockObstacle.swift */,
+				B1000000000000000000000D /* MovingCarObstacle.swift */,
+				B1000000000000000000000E /* ObstacleSpawner.swift */,
+			);
+			path = Obstacles;
+			sourceTree = "<group>";
+		};
+		E1000000000000000000000B /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B1000000000000000000000F /* HUDNode.swift */,
+				B10000000000000000000010 /* KickButtonNode.swift */,
+				B1000000000000000000001C /* PhotosensitiveToggleNode.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		E1000000000000000000000C /* Systems */ = {
+			isa = PBXGroup;
+			children = (
+				B10000000000000000000011 /* ScoreSystem.swift */,
+			);
+			path = Systems;
+			sourceTree = "<group>";
+		};
+		E1000000000000000000000D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B10000000000000000000012 /* CGPoint+Lerp.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E1000000000000000000000E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B10000000000000000000013 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E10000000000000000000010 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				B10000000000000000000016 /* PhotosensitiveSettings.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		E10000000000000000000011 /* Chaos */ = {
+			isa = PBXGroup;
+			children = (
+				B10000000000000000000017 /* ExplosionEffect.swift */,
+				B10000000000000000000018 /* ExplosionSystem.swift */,
+				B10000000000000000000019 /* TrafficDensityController.swift */,
+				B1000000000000000000001A /* ImpactFeedbackSystem.swift */,
+				B1000000000000000000001B /* ChainReactionManager.swift */,
+			);
+			path = Chaos;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F10000000000000000000001 /* CubeRunOverDrive */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F20000000000000000000003 /* Build configuration list for PBXNativeTarget "CubeRunOverDrive" */;
+			buildPhases = (
+				F10000000000000000000002 /* Sources */,
+				D10000000000000000000001 /* Frameworks */,
+				F10000000000000000000003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CubeRunOverDrive;
+			productName = CubeRunOverDrive;
+			productReference = C10000000000000000000001 /* CubeRunOverDrive.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		G10000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2630;
+				LastUpgradeCheck = 2630;
+				TargetAttributes = {
+					F10000000000000000000001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = G20000000000000000000001 /* Build configuration list for PBXProject "CubeRunOverDrive" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E10000000000000000000001;
+			productRefGroup = E10000000000000000000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F10000000000000000000001 /* CubeRunOverDrive */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F10000000000000000000003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000000000000000000013 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F10000000000000000000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000000000000000000001 /* AppDelegate.swift in Sources */,
+				A10000000000000000000002 /* GameViewController.swift in Sources */,
+				A10000000000000000000003 /* GameScene.swift in Sources */,
+				A10000000000000000000004 /* GameState.swift in Sources */,
+				A10000000000000000000005 /* GameStateManager.swift in Sources */,
+				A10000000000000000000006 /* PlayerNode.swift in Sources */,
+				A10000000000000000000007 /* PlayerController.swift in Sources */,
+				A10000000000000000000008 /* CameraController.swift in Sources */,
+				A10000000000000000000009 /* GroundNode.swift in Sources */,
+				A1000000000000000000000A /* PhysicsCategory.swift in Sources */,
+				A1000000000000000000000B /* ObstacleNode.swift in Sources */,
+				A1000000000000000000000C /* StaticBlockObstacle.swift in Sources */,
+				A1000000000000000000000D /* MovingCarObstacle.swift in Sources */,
+				A1000000000000000000000E /* ObstacleSpawner.swift in Sources */,
+				A1000000000000000000000F /* HUDNode.swift in Sources */,
+				A10000000000000000000010 /* KickButtonNode.swift in Sources */,
+				A10000000000000000000011 /* ScoreSystem.swift in Sources */,
+				A10000000000000000000012 /* CGPoint+Lerp.swift in Sources */,
+				A10000000000000000000014 /* GameLayout.swift in Sources */,
+				A10000000000000000000015 /* SceneDelegate.swift in Sources */,
+				A10000000000000000000016 /* PhotosensitiveSettings.swift in Sources */,
+				A10000000000000000000017 /* ExplosionEffect.swift in Sources */,
+				A10000000000000000000018 /* ExplosionSystem.swift in Sources */,
+				A10000000000000000000019 /* TrafficDensityController.swift in Sources */,
+				A1000000000000000000001A /* ImpactFeedbackSystem.swift in Sources */,
+				A1000000000000000000001B /* ChainReactionManager.swift in Sources */,
+				A1000000000000000000001C /* PhotosensitiveToggleNode.swift in Sources */,
+				A1000000000000000000001D /* ExplodableObstacle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		H10000000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = minimal;
+			};
+			name = Debug;
+		};
+		H10000000000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		H10000000000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = CubeRunOverDrive/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cuberun.overdrive;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		H10000000000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = CubeRunOverDrive/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cuberun.overdrive;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F20000000000000000000003 /* Build configuration list for PBXNativeTarget "CubeRunOverDrive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				H10000000000000000000003 /* Debug */,
+				H10000000000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		G20000000000000000000001 /* Build configuration list for PBXProject "CubeRunOverDrive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				H10000000000000000000001 /* Debug */,
+				H10000000000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = G10000000000000000000001 /* Project object */;
+}
