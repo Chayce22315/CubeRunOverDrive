@@ -51,6 +51,35 @@ Same steps, but pick an **iPhone** simulator as the destination.
 - [ ] SAFE FX toggle works and persists after relaunch
 - [ ] Stable on physical device at ~60 FPS
 
+## Build an IPA for Sideloadly (command line, Mac only)
+
+From the **repo root** on your Mac:
+
+```bash
+chmod +x scripts/build-ipa-sideloadly.sh
+
+# Recommended: unsigned IPA — Sideloadly signs when you install
+./scripts/build-ipa-sideloadly.sh
+```
+
+Output: `build/sideloadly/CubeRunOverDrive.ipa`
+
+**Optional:** pass your 10-character Team ID to export a pre-signed development IPA:
+
+```bash
+./scripts/build-ipa-sideloadly.sh AB12CD34EF
+```
+
+### Install with Sideloadly
+
+1. Install [Sideloadly](https://sideloadly.io/) on your Mac or Windows PC.
+2. Connect your iPhone (USB) and unlock it.
+3. Drag `build/sideloadly/CubeRunOverDrive.ipa` into Sideloadly.
+4. Enter your **Apple ID** (free account is fine).
+5. Click **Start** and trust the developer profile on the iPhone if asked.
+
+Apps signed this way typically expire after **7 days**; rebuild the IPA and sideload again to refresh.
+
 ## Phase lock
 
 **Phases 3–8** (bombs, void, multiplayer, shop, achievements, replay) are **not** implemented. Approve before starting Phase 3.
